@@ -11,3 +11,17 @@
     src: url(../fonts/gilroyextrabold.woff2) format("woff2"),
     url(../fonts/gilroyextrabold.woff) format("woff");
 }
+
+
+/*****popular ****************************************************/
+.popular__block{
+	display: none;
+}
+
+.popular__item.item1 .popular__selector:checked + .popular__block,
+.popular__item.item2 .popular__selector:checked + .popular__block,
+.popular__item.item3 .popular__selector:checked + .popular__block{
+	display: block;
+}
+
+

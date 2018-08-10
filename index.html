@@ -8,12 +8,13 @@
   </head>
   <body>
   	<header class="header">
-  		<div class="logo header__logo">
-  			Device
-  		</div>
+  		<a class="logo">Device</a>
   		<div class="header__top-block">
-  			<div class="header__search">
-  				Форма поиска
+  			<div class="search">
+                <form class="search__form"  action="https://echo.htmlacademy.ru" method="get"> 
+                	<input class="search__text" type="search" name="search" placeholder="Поиск по сайту">
+                    <input class="button search__button" type="submit" value="Найти">
+                </form>
   			</div>
   			<ul class="user-menu">
   				<li class="user-menu__item"><a href="#" class="user-menu__link">Войти</a></li>
@@ -31,26 +32,28 @@
   		<div class="header__bottom-block">
   			<section class="catalog">
   				<a href="" class="catalog__header">Каталог товаров</a>
-  				<ul class="catalog__list">
-                    <li class="catalog__item">
-                        <a href="#" class="catalog__link">Виртуальная реальность</a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#" class="catalog__link">Моноподы для селфи</a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#" class="catalog__link">>Экшн-камеры</a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#" class="catalog__link">Фитнеc-браслеты</a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#" class="catalog__link">Умные часы</a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#" class="catalog__link">Квадрокоптеры</a>
-                    </li>
-  				</ul>
+  				<div class="catalog__block">
+	  				<ul class="catalog__list">
+	                    <li class="catalog__item">
+	                        <a href="#" class="catalog__link">Виртуальная реальность</a>
+	                    </li>
+	                    <li class="catalog__item">
+	                        <a href="#" class="catalog__link">Моноподы для селфи</a>
+	                    </li>
+	                    <li class="catalog__item">
+	                        <a href="#" class="catalog__link">Экшн-камеры</a>
+	                    </li>
+	                    <li class="catalog__item">
+	                        <a href="#" class="catalog__link">Фитнеc-браслеты</a>
+	                    </li>
+	                    <li class="catalog__item">
+	                        <a href="#" class="catalog__link">Умные часы</a>
+	                    </li>
+	                    <li class="catalog__item">
+	                        <a href="#" class="catalog__link">Квадрокоптеры</a>
+	                    </li>
+	  				</ul>
+  				</div>
   			</section>
 	  		<nav class="header__main-menu">
 	  			<ul class="main-menu">
@@ -68,13 +71,81 @@
   		</div>
   	</header>
 	<main class="main">
+		<h1 class="main__header visually-hidden">Интернет-магазин Device</h1> 		
+		<section class="popular">
+			<h2 class="popular__header visually-hidden">Популярные товары</h2> 
+			<ul class="popular__list">
+				<li class="popular__item item1 popular__item--active">
+					<input type="radio" class="popular__selector" name="popular-selector" checked>
+					<div class="popular__block">
+						<p class="popular__number">01</p>
+						<p class="popular__slogan">Делай селфи, как Бен Стиллер! </p>
+						<p class="popular__description">Самая длинная палка для селфи доступна в ашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 илограмм.</p>					
+						<a href="#" class="popular__more-info">Подробнее</a>
+						<table class="popular__characteristics">
+							<tr>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
 
-		
+						</table>
+					</div>
+				</li>
+				<li class="popular__item item2">
+					<input type="radio" class="popular__selector" name="popular-selector">			
+					<div class="popular__block">
+						<p class="popular__number">02</p>
+						<p class="popular__slogan">Худеем правильно!</p>
+						<p class="popular__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>					
+						<a href="#" class="popular__more-info">Подробнее</a>
+						<table class="popular__characteristics">
+							<tr>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+
+						</table>
+					</div>
+				</li>
+				<li class="popular__item item3">
+					<input type="radio" class="popular__selector" name="popular-selector">			
+					<div class="popular__block">
+						<p class="popular__number">03</p>
+						<p class="popular__slogan">Порхает как бабочка, жалит как пчела!</p>
+						<p class="popular__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>		
+						<a href="#" class="popular__more-info">Подробнее</a>
+						<table class="popular__characteristics">
+							<tr>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+
+						</table>
+					</div>					
+				</li>								
+			</ul>
+		</section>
 	</main>
 	<footer class="footer">
-  		<div class="logo footer__logo">
-  			Device
-  		</div>		
+  		<a class="logo">Device</a>
   		<div class="footer__top-block">
   			<ul class="user-menu">
   				<li class="user-menu__item"><a href="#" class="user-menu__link">Войти</a></li>
