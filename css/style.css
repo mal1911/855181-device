@@ -18,9 +18,9 @@
 	display: none;
 }
 
-.popular__item.item1 .popular__selector:checked + .popular__block,
-.popular__item.item2 .popular__selector:checked + .popular__block,
-.popular__item.item3 .popular__selector:checked + .popular__block{
+.popular__item--item1 .popular__selector:checked + .popular__block,
+.popular__item--item2 .popular__selector:checked + .popular__block,
+.popular__item--item3 .popular__selector:checked + .popular__block{
 	display: block;
 }
 
