@@ -3,6 +3,7 @@
 	<head>
   	<meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">    
     <link rel="stylesheet" href="css/style.css">    
   </head>
   <body>
@@ -13,64 +14,65 @@
 				</svg>
   		</a>
   		<div class="header__top">
-  			<div class="search">
-        	<form class="search__form"  action="https://echo.htmlacademy.ru" method="get"> 
-          	<input class="search__text" type="text" name="search" placeholder="Поиск по сайту">
-            <input class="button search__button" type="submit" value="Найти">
-          </form>
-  			</div>
-
-  			<ul class="menu menu--user">
-  				<li class="menu__item"><a class="menu__link menu__link--user-in" href="#">Войти</a></li>
-  			</ul>
-  			<ul class="menu menu--product">
-  				<li class="menu__item">
-  					<a class="menu__link menu__link--compare" href="#">Сравнить</a>
-  				</li>
-  				<li class="menu__item">
-  					<a class="menu__link menu__link--basket" href="#">Корзина</a>
-  				</li>  				
-  			</ul>
+       	<form class="search"  action="https://echo.htmlacademy.ru" method="get"> 
+         	<input class="search__text" type="text" name="search" placeholder="Поиск по сайту">
+           <input class="button search__button" type="submit" value="Найти">
+        </form>
+        <div class="header__right">
+          <ul class="menu menu--user">
+            <li class="menu__item"><a class="menu__link menu__link--user-in" href="#">Войти</a></li>
+          </ul>
+          <ul class="menu menu--product">
+            <li class="menu__item">
+              <a class="menu__link menu__link--compare" href="#">Сравнить</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--basket" href="#">Корзина</a>
+            </li>         
+          </ul>
+        </div>
   		</div>
   		<div class="header__main">
   			<section class="catalog">
-  				<a href="" class="menu__link catalog__header">Каталог товаров</a>
-  				<div class="catalog__block">
-	  				<ul class="menu menu--catalog">
-	          	<li class="menu__item">
-	              <a class="menu__link menu__link--catalog" href="#">Виртуальная реальность</a>
+  				<a href="" class="catalog__header">Каталог товаров</a>
+  				
+	  				<ul class="catalog__list">
+	          	<li class="catalog__item">
+	              <a class="catalog__link" href="#">Виртуальная реальность</a>
 	            </li>
-	            <li class="menu__item">
-	              <a class="menu__link menu__link--catalog" href="#">Моноподы для селфи</a>
+	            <li class="catalog__item">
+	              <a class="catalog__link" href="#">Моноподы для селфи</a>
 	            </li>
-	            <li class="menu__item">
-	              <a class="menu__link menu__link--catalog" href="#">Экшн-камеры</a>
+	            <li class="catalog__item">
+	              <a class="catalog__link" href="#">Экшн-камеры</a>
 	            </li>
-	            <li class="menu__item">
-	              <a class="menu__link menu__link--catalog" href="#">Фитнеc-браслеты</a>
+	            <li class="catalog__item">
+	              <a class="catalog__link" href="#">Фитнеc-браслеты</a>
 	            </li>
-	            <li class="menu__item">
-	            	<a class="menu__link menu__link--catalog" href="#">Умные часы</a>
+	            <li class="catalog__item">
+	            	<a class="catalog__link" href="#">Умные часы</a>
 	            </li>
-	            <li class="menu__item">
-	            	<a class="menu__link menu__link--catalog" href="#">Квадрокоптеры</a>
+	            <li class="catalog__item">
+	            	<a class="catalog__link" href="#">Квадрокоптеры</a>
 	            </li>
 	  				</ul>
-  				</div>
+  				
   			</section>
-	  		<nav class="header__nav">
-	  			<ul class="menu menu--main">
-            <li class="menu__item">
-              <a class="menu__link menu__link--delivery" href="#">Доставка</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link menu__link--warranty" href="#">Гарантия</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link menu__link--contacts" href="#">Контакты</a>
-            </li>	  				
-	  			</ul>
-	  		</nav>
+        <div class="header__right">
+          <nav class="header__nav">
+            <ul class="menu menu--main">
+              <li class="menu__item">
+                <a class="menu__link menu__link--delivery" href="#">Доставка</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--warranty" href="#">Гарантия</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--contacts" href="#">Контакты</a>
+              </li>           
+            </ul>
+          </nav>
+        </div>
   		</div>
   	</header>
 		<main class="main">
