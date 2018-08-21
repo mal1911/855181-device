@@ -79,63 +79,81 @@
 			<h1 class="main__header visually-hidden">Интернет-магазин Device</h1> 		
 			<section class="popular">
 				<h2 class="popular__header visually-hidden">Популярные товары</h2> 
-				<input type="radio" class="popular__selector popular__selector--item1 visually-hidden" id="popular__selector--item1" name="popular-selector" checked>
-				<input type="radio" class="popular__selector popular__selector--item2 visually-hidden" id="popular__selector--item2" name="popular-selector">			
-				<input type="radio" class="popular__selector popular__selector--item3 visually-hidden" id="popular__selector--item3" name="popular-selector">			
+				<input type="radio" class="popular__selector visually-hidden" id="popular__selector--item1" name="popular-selector" checked>
+				<input type="radio" class="popular__selector visually-hidden" id="popular__selector--item2" name="popular-selector">			
+				<input type="radio" class="popular__selector visually-hidden" id="popular__selector--item3" name="popular-selector">			
 				<ul class="popular__list">
 					<li class="popular__item popular__item--item1">
-						<p class="popular__number">01</p>
-						<p class="popular__slogan">Делай селфи, как Бен Стиллер! </p>
-						<p class="popular__description">Самая длинная палка для селфи доступна в ашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>					
-						<a href="#" class="popular__more-info">Подробнее</a>
-						<dl class="characteristics">
-							<div class="characteristics__item">
-								<dd>8,5 м</dd>
-								<dt>Длина палки</dt>
-							</div>
-							<div class="characteristics__item">
-								<dd>5 кг</dd>
-								<dt>Вес палки</dt>
-							</div>
-							<div class="characteristics__item">
-								<dd>Карбон</dd>
-								<dt>Материал</dt>
-							</div>
-						</dl>
+						<div class="popular__block">
+							<p class="popular__number">01</p>
+							<p class="popular__slogan">Делай селфи, как Бен Стиллер! </p>
+							<p class="popular__description">Самая длинная палка для селфи доступна в ашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>					
+							<a href="#" class="popular__more-info">Подробнее</a>
+							<ul class="characteristics">
+								<li class="characteristics__item">
+									<dl>
+										<dt>Длина палки</dt>
+										<dd>8,5 м</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>Вес палки</dt>
+										<dd>5 кг</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>Материал</dt>
+										<dd>Карбон</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li class="popular__item popular__item--item2">
-						<p class="popular__number">02</p>
-						<p class="popular__slogan">Худеем правильно!</p>
-						<p class="popular__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>					
-						<a href="#" class="popular__more-info">Подробнее</a>
-						<dl class="characteristics">
-							<div class="characteristics__item">
-								<dd>48 часов</dd>
-								<dt>Без подзарядки</dt>
-							</div>
-						</dl>
+						<div class="popular__block">
+							<p class="popular__number">02</p>
+							<p class="popular__slogan">Худеем правильно!</p>
+							<p class="popular__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>					
+							<a href="#" class="popular__more-info">Подробнее</a>
+							<ul class="characteristics">
+								<li class="characteristics__item">
+									<dl>
+										<dt>Без подзарядки</dt>
+										<dd>48 часов</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li class="popular__item popular__item--item3">
-						<p class="popular__number">03</p>
-						<p class="popular__slogan">Порхает как бабочка, жалит как пчела!</p>
-						<p class="popular__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>	
-						<a href="#" class="popular__more-info">Подробнее</a>
-						<dl class="characteristics">
-							<div class="characteristics__item">
-								<dd>800 м</dd>
-								<dt>Дальность полета</dt>
-							</div>
-							<div class="characteristics__item">
-								<dd>50 м</dd>
-								<dt>Радиус поражения</dt>
-							</div>
-						</dl>
+						<div class="popular__block">
+							<p class="popular__number">03</p>
+							<p class="popular__slogan">Порхает как бабочка, жалит как пчела!</p>
+							<p class="popular__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>		
+							<a href="#" class="popular__more-info">Подробнее</a>
+							<ul class="characteristics">
+								<li class="characteristics__item">
+									<dl>
+										<dt>Дальность полета</dt>
+										<dd>800 м</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>Радиус поражения</dt>
+										<dd>50 м</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>					
 					</li>								
 				</ul>
 				<ul class="popular__controls">
-					<li class="popular__control"><label for="popular__selector--item1">Первая кнопка</label></li>
-					<li class="popular__control"><label for="popular__selector--item2">Вторая кнопка</label></li>
-					<li class="popular__control"><label for="popular__selector--item3">Третья кнопка</label></li>
+					<li class="controls__item"><label for="popular__selector--item1">Первая кнопка</label></li>
+					<li class="controls__item"><label for="popular__selector--item2">Вторая кнопка</label></li>
+					<li class="controls__item"><label for="popular__selector--item3">Третья кнопка</label></li>
 				</ul>
 		  </section>
       <section class="category">
@@ -249,57 +267,50 @@
         	</svg>
       	</a>
 	      <div class="footer__top">
-	      	<div class="footer__right">
-		        <ul class="menu menu--user">
-		          <li class="menu__item">
-	              <a class="menu__link menu__link--user-in" href="#">Войти</a>
-	            </li>
-		        </ul>
-		        <ul class="menu menu--product">
-		          <li class="menu__item">
-		            <a class="menu__link menu__link--compare" href="#">Сравнить</a>
-		          </li>
-		          <li class="menu__item">
-		            <a class="menu__link menu__link--basket" href="#">Корзина</a>
-		          </li>         
-		        </ul>
-	      	</div>
+	        <ul class="menu menu--user">
+	          <li class="menu__item">
+              <a class="menu__link menu__link--user-in" href="#">Войти</a>
+            </li>
+	        </ul>
+	        <ul class="menu menu--product">
+	          <li class="menu__item">
+	            <a class="menu__link menu__link--compare" href="#">Сравнить</a>
+	          </li>
+	          <li class="menu__item">
+	            <a class="menu__link menu__link--basket" href="#">Корзина</a>
+	          </li>         
+	        </ul>
 	      </div>
 	      <div class="footer__main">
 	        <address class="footer__address">г. Москва, ул. Строителей, 15</address> 
 	  			<ul class="menu menu--main">
-        		<li class="menu__item">
-          		<a class="menu__link menu__link--delivery" href="#">Доставка</a>
-           	</li>
-          	<li class="menu__item">
-            	<a class="menu__link menu__link--warranty" href="#">Гарантия</a>
-          	</li>
-          	<li class="menu__item">
-            	<a class="menu__link menu__link--contacts" href="#">Контакты</a>
-          	</li>	  				
+            <li class="menu__item">
+              <a class="menu__link menu__link--delivery" href="#">Доставка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--warranty" href="#">Гарантия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--contacts" href="#">Контакты</a>
+            </li>	  				
 	  			</ul>
 	  			<a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
 	      </div>
-
 	      <div class="footer__bottom">
 	        <ul class="menu menu--social">
 	          <li class="menu__item">
-	          	<span class="visually-hidden">fb</span>
-	            <a class="menu__link menu__link--fb" href="#"></a>
+	            <a class="menu__link" href="#">fb</a>
 	          </li>
 	          <li class="menu__item">
-	            <span class="visually-hidden">vk</span>
-	            <a class="menu__link menu__link--vk" href="#"></a>
+	            <a class="menu__link" href="#">vk</a>
 	          </li>
 	          <li class="menu__item">
-	          	<span class="visually-hidden">twitter</span>
-	            <a class="menu__link menu__link--twitter" href="#"></a>
+	            <a class="menu__link" href="#">twitter</a>
 	          </li>               
 	        </ul> 
-	      	<a class="html-academy" href="https://htmlacademy.ru" target="_blank">
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" fill="#ffc600">
-						  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-						</svg>
+	      	<a class="html-academy" href="https://htmlacademy.ru">
+	      		<svg>
+	      		</svg>
 	      	</a>
 	      </div>
 	    </div>
