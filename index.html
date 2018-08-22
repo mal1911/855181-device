@@ -135,13 +135,13 @@
 						</div>
 					</li>								
 				</ul>
-				<ul class="popular__controls">
-					<li><label class="popular__control popular__control--item1" for="popular__selector--item1"></label></li>
-					<li><label class="popular__control popular__control--item2" for="popular__selector--item2"></label></li>
-					<li><label class="popular__control popular__control--item3" for="popular__selector--item3"></label></li>
-				</ul>
+				<div class="popular__controls">
+					<label class="popular__control popular__control--item1" for="popular__selector--item1"></label>
+					<label class="popular__control popular__control--item2" for="popular__selector--item2"></label>
+					<label class="popular__control popular__control--item3" for="popular__selector--item3"></label>
+				</div>
 		  </section>
-      <section class="category">
+      <section class="category container">
       	<h2 class="category__header visually-hidden">Категории устройств</h2>
         <ul class="category__list">
         	<li class="category__item>">
@@ -165,39 +165,41 @@
         </ul>
       </section>       
       <section class="service">
-        <h2 class="service__header visually-hidden">Услуги</h2>
-				<input type="radio" class="service__selector visually-hidden" id="service__selector--item1" name="service-selector" checked>
-				<input type="radio" class="popular__selector visually-hidden" id="service__selector--item2" name="service-selector">			
-				<input type="radio" class="popular__selector visually-hidden" id="service__selector--item3" name="service-selector">			
-				<ul class="service__list">
-					<li class="service__item service__item--item1">
-            <div class="service-block">
-	            <h3 class="service-block__header">Доставка</h3>
-              <p class="service-block__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </div>
-					</li>
-					<li class="service__item service__item--item2">
-            <div class="service-block">
-              <h3 class="service-block__header">Кредит</h3>
-              <p class="service-block__text">
-               	Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
-            </div>
-					</li>
-					<li class="service__item service__item--item3">
-            <div class="service-block">
-              <h3 class="service-block__header">Гарантия</h3>
-              <p class="service-block__text">
-               	Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-              </p>
-            </div>            
-					</li>
-				</ul>
-				<ul class="service__controls">
-					<li class="controls__item"><label for="service__selector--item1">Доставка</label></li>
-					<li class="controls__item"><label for="service__selector--item2">Гарантия</label></li>
-					<li class="controls__item"><label for="service__selector--item3">Кредит</label></li>
-				</ul>
+      	<div class="container">
+	        <h2 class="service__header visually-hidden">Услуги</h2>
+					<input type="radio" class="service__selector service__selector--item1 visually-hidden" id="service__selector--item1" name="service-selector" checked>
+					<input type="radio" class="service__selector service__selector--item2 visually-hidden" id="service__selector--item2" name="service-selector">			
+					<input type="radio" class="service__selector service__selector--item3 visually-hidden" id="service__selector--item3" name="service-selector">			
+					<ul class="service__list">
+						<li class="service__item service__item--item1">
+	            <div class="service__right">
+		            <h3 class="service__sub-header">Доставка</h3>
+	              <p class="service__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+	            </div>
+						</li>
+						<li class="service__item service__item--item2">
+	            <div class="service__right">
+	              <h3 class="service__sub-header">Гарантия</h3>
+	              <p class="service__text">
+	               	Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+	              </p>
+	            </div>            
+						</li>
+						<li class="service__item service__item--item3">
+	            <div class="service__right">
+	              <h3 class="service__sub-header">Кредит</h3>
+	              <p class="service__text">
+	               	Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+	              </p>
+	            </div>
+						</li>
+					</ul>
+					<div class="service__controls">
+						<label class="button service__control service__control--item1" for="service__selector--item1">Доставка</label>
+						<label class="button service__control service__control--item2" for="service__selector--item2">Гарантия</label>
+						<label class="button service__control service__control--item3" for="service__selector--item3">Кредит</label>
+					</div>
+      	</div>
       </section>
       <section class="partners">
         <h2 class="service__header visually-hidden">Наши партнеры</h2>      	
