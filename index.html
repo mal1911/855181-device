@@ -77,65 +77,68 @@
   	</header>
 		<main class="main">
 			<h1 class="main__header visually-hidden">Интернет-магазин Device</h1> 		
-			<section class="popular">
+			<section class="popular container">
 				<h2 class="popular__header visually-hidden">Популярные товары</h2> 
 				<input type="radio" class="popular__selector popular__selector--item1 visually-hidden" id="popular__selector--item1" name="popular-selector" checked>
 				<input type="radio" class="popular__selector popular__selector--item2 visually-hidden" id="popular__selector--item2" name="popular-selector">			
 				<input type="radio" class="popular__selector popular__selector--item3 visually-hidden" id="popular__selector--item3" name="popular-selector">			
 				<ul class="popular__list">
 					<li class="popular__item popular__item--item1">
-						<p class="popular__number">01</p>
-						<p class="popular__slogan">Делай селфи, как Бен Стиллер! </p>
-						<p class="popular__description">Самая длинная палка для селфи доступна в ашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>					
-						<a href="#" class="popular__more-info">Подробнее</a>
-						<dl class="characteristics">
-							<div class="characteristics__item">
-								<dd>8,5 м</dd>
-								<dt>Длина палки</dt>
-							</div>
-							<div class="characteristics__item">
-								<dd>5 кг</dd>
-								<dt>Вес палки</dt>
-							</div>
-							<div class="characteristics__item">
-								<dd>Карбон</dd>
-								<dt>Материал</dt>
-							</div>
-						</dl>
+						<div class="popular__right">
+							<p class="popular__slogan">Делай селфи, <br> как Бен Стиллер! </p>
+							<p class="popular__description">Самая длинная палка для селфи доступна в ашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>					
+							<a href="#" class="button popular__more-info">Подробнее</a>
+							<dl class="characteristics">
+								<div class="characteristics__item">
+									<dd>8,5 м</dd>
+									<dt>Длина палки</dt>
+								</div>
+								<div class="characteristics__item">
+									<dd>5 кг</dd>
+									<dt>Вес палки</dt>
+								</div>
+								<div class="characteristics__item">
+									<dd>Карбон</dd>
+									<dt>Материал</dt>
+								</div>
+							</dl>
+						</div>
 					</li>
 					<li class="popular__item popular__item--item2">
-						<p class="popular__number">02</p>
-						<p class="popular__slogan">Худеем правильно!</p>
-						<p class="popular__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>					
-						<a href="#" class="popular__more-info">Подробнее</a>
-						<dl class="characteristics">
-							<div class="characteristics__item">
-								<dd>48 часов</dd>
-								<dt>Без подзарядки</dt>
-							</div>
-						</dl>
+						<div class="popular__right">
+							<p class="popular__slogan">Худеем <br> правильно!</p>
+							<p class="popular__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>					
+							<a href="#" class="button popular__more-info">Подробнее</a>
+							<dl class="characteristics">
+								<div class="characteristics__item">
+									<dd>48 часов</dd>
+									<dt>Без подзарядки</dt>
+								</div>
+							</dl>
+						</div>
 					</li>
 					<li class="popular__item popular__item--item3">
-						<p class="popular__number">03</p>
-						<p class="popular__slogan">Порхает как бабочка, жалит как пчела!</p>
-						<p class="popular__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>	
-						<a href="#" class="popular__more-info">Подробнее</a>
-						<dl class="characteristics">
-							<div class="characteristics__item">
-								<dd>800 м</dd>
-								<dt>Дальность полета</dt>
-							</div>
-							<div class="characteristics__item">
-								<dd>50 м</dd>
-								<dt>Радиус поражения</dt>
-							</div>
-						</dl>
+						<div class="popular__right">
+							<p class="popular__slogan">Порхает как бабочка, <br> жалит как пчела!</p>
+							<p class="popular__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>	
+							<a href="#" class="button popular__more-info">Подробнее</a>
+							<dl class="characteristics">
+								<div class="characteristics__item">
+									<dd>800 м</dd>
+									<dt>Дальность полета</dt>
+								</div>
+								<div class="characteristics__item">
+									<dd>50 м</dd>
+									<dt>Радиус поражения</dt>
+								</div>
+							</dl>
+						</div>
 					</li>								
 				</ul>
 				<ul class="popular__controls">
-					<li class="popular__control"><label for="popular__selector--item1">Первая кнопка</label></li>
-					<li class="popular__control"><label for="popular__selector--item2">Вторая кнопка</label></li>
-					<li class="popular__control"><label for="popular__selector--item3">Третья кнопка</label></li>
+					<li><label class="popular__control popular__control--item1" for="popular__selector--item1"></label></li>
+					<li><label class="popular__control popular__control--item2" for="popular__selector--item2"></label></li>
+					<li><label class="popular__control popular__control--item3" for="popular__selector--item3"></label></li>
 				</ul>
 		  </section>
       <section class="category">
