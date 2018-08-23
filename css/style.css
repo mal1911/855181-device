@@ -73,7 +73,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   letter-spacing: 4px;
   color: black;
-  background: linear-gradient(to bottom, white 16px, #f0c52e 16px, #f0c52e 24px, white 24px);
+  background-image: linear-gradient(to bottom, white 16px, #f0c52e 16px, #f0c52e 24px, white 24px)/*, inherit*/;
   text-transform: uppercase;
 }
 
@@ -592,25 +592,56 @@ input::-ms-clear {
 .service .container {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .service__controls{
-  width: 339px;
+  /*width: 227px;*/
   height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   margin-bottom: 68px;
   border-right: 7px solid black;
 
 }
 
 .service__control{
+  width: 165px;
+  margin-right: 112px;
   margin-bottom: 25px;
-  background: inherit;
+  /*padding-left: 5px;*/
+  /*text-align: ; */
 }
+
 .service__control:first-child{
-  margin-top: 35px;
+  margin-top: 33px;
+}
+
+.service__selector--item1:checked ~ .service__list .service__item--item1,
+.service__selector--item2:checked ~ .service__list .service__item--item2,
+.service__selector--item3:checked ~ .service__list .service__item--item3 {
+  display: flex;
+}
+.service__selector--item1:checked ~ .service__controls .service__control--item1,
+.service__selector--item2:checked ~ .service__controls .service__control--item2,
+.service__selector--item3:checked ~ .service__controls .service__control--item3 {
+  color: #f7e296; /*#f0c52e*/
+  background-image: none;
+  background-color: black;
+}
+
+.service__selector--item1:checked ~ .service__controls .service__control--item1::after,
+.service__selector--item2:checked ~ .service__controls .service__control--item2::after,
+.service__selector--item3:checked ~ .service__controls .service__control--item3::after {
+  position: absolute;
+  top: 0;
+  left: 165px;
+  width: 112px;
+  height: 40px;
+  background-color: black;
+  content: "";
 }
 
 .service__list{
@@ -620,16 +651,21 @@ input::-ms-clear {
 }
 
 .service__item {
-  /*position: relative;
-  display: flex;
-  justify-content: flex-end;*/
   display: none;
+  padding-left: 119px;
 }
 
-.service__selector--item1:checked ~ .service__list .service__item--item1,
-.service__selector--item2:checked ~ .service__list .service__item--item2,
-.service__selector--item3:checked ~ .service__list .service__item--item3 {
-  display: flex;
+.service__sub-header{
+  margin-top: 58px;
+  margin-bottom: 31px;
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;   
+}
+
+.service__text {
+  width: 60%;
 }
 
 /***** footer ***************************************************/
