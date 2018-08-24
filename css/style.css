@@ -75,6 +75,7 @@ input[type="radio"].visually-hidden {
   color: black;
   background-image: linear-gradient(to bottom, white 16px, #f0c52e 16px, #f0c52e 24px, white 24px)/*, inherit*/;
   text-transform: uppercase;
+  border: none;
 }
 
 .button:hover,
@@ -822,11 +823,110 @@ input::-ms-clear {
   background-image: url("../img/brand4.png");
 }
 
+/***** info *****************************************************/
+.info {
+  margin-top: 136px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  width: 50%
+}
+
+.contacts {
+  width: 48.4%
+}
+
+.about__header,
+.contacts__header {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 44px;
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;     
+}
+
+.about__header::before,
+.contacts__header::before {
+  position: absolute;
+  top: -51px;
+  left: 1px;
+  width: 79px;
+  height: 7px;
+  background-color: black;
+  content: "";
+}
+
+.about__text,
+.contacts__text {
+  margin-bottom: 29px;
+}
+
+.about__text {
+  width: 478px;
+  
+}
+
+.contacts__text {
+  width: 510px;
+}
+
+.about__list {
+  margin-top: 66px;
+  padding-left: 36px;
+  list-style: none;  
+}
+.about__item {
+  position: relative;
+}  
+.about__item:before {
+  position: absolute;
+  top: 17px;
+  left: -36px;
+  width: 8px;
+  height: 8px;
+  background-image: url("../img/list-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1;
+  content: "";
+}  
+
+.about__link {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 40px;
+  color: black;     
+}
+
+.about__link-more {
+  width: 259px;
+  margin-top: 38px;
+}
+
+.contacts__button{
+  width: 259px;
+  margin-top: 69px;
+}
+
+.contacts__map{
+  width: 100%;
+  height: 221px;
+  margin-top: 39px;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 /***** footer ***************************************************/
 
 .footer{
   position: relative;
-  margin-top: 200px;
+  margin-top: 83px;
   background-color: #464646;
 }
 .footer .container{
