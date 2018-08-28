@@ -132,46 +132,34 @@
         <div class="products__block">
           <div class="container">
             <form class="filter"  action="https://echo.htmlacademy.ru" method="get">
-
-              <fieldset>
-                <legend>Стоимость</legend>
-
-              <!-- <p class="filter__header"></p>  -->
-                <input class="filter__price" id="filter__price" type="range" name="price">
-              
+              <fieldset class="fields__price">
+                <legend class="filter__title">Стоимость</legend>
+                <div class="filter__price" id="filter__price"></div>
+                <label  class="price__label" for="filter__price"><span class="price__min">от 0</span><span class="price__max">до 5000</span></label>
               </fieldset>
-
-              <!-- <p class="filter__header">Цвет</p>  -->
-
-              <fieldset>
-                <legend>Цвет</legend>
-                  <input class="filter__color" id="filter__color--item1" type="checkbox" name="filter__color--item1" checked>
-                  <label for="filter__color--item1">Черный</label>
-                  <input class="filter__color" id="filter__color--item2" type="checkbox" name="filter__color--item2" checked>
-                  <label for="filter__color--item2">Белый</label>
-                  <input class="filter__color" id="filter__color--item3" type="checkbox" name="filter__color--item3">
-                  <label for="filter__color--item3">Синий</label>
-                  <input class="filter__color" id="filter__color--item4" type="checkbox" name="filter__color--item4" checked>
-                  <label for="filter__color--item4">Красный</label>
-                  <input class="filter__color" id="filter__color--item5" type="checkbox" name="filter__color--item5">
-                 <label for="filter__color--item5">Розовый</label>
+              <fieldset class="fields__color">
+                <legend class="filter__title">Цвет</legend>
+                  <input class="filter__color visually-hidden" id="filter__color--item1" type="checkbox" name="filter__color--item1" checked>
+                  <label  class="color__label color__label--item1" for="filter__color--item1">Черный</label>
+                  <input class="filter__color visually-hidden" id="filter__color--item2" type="checkbox" name="filter__color--item2" checked>
+                  <label class="color__label color__label--item2" for="filter__color--item2">Белый</label>
+                  <input class="filter__color visually-hidden" id="filter__color--item3" type="checkbox" name="filter__color--item3">
+                  <label class="color__label color__label--item3" for="filter__color--item3">Синий</label>
+                  <input class="filter__color visually-hidden" id="filter__color--item4" type="checkbox" name="filter__color--item4" checked>
+                  <label class="color__label color__label--item4" for="filter__color--item4">Красный</label>
+                  <input class="filter__color visually-hidden" id="filter__color--item5" type="checkbox" name="filter__color--item5">
+                 <label class="color__label color__label--item5" for="filter__color--item5">Розовый</label>
               </fieldset>
-              <fieldset>
-                 <legend>Bluetooth</legend>                
+              <fieldset class="fields__bluetooth">
+                 <legend class="filter__title">Bluetooth</legend>                
                   <input class="filter__bluetooth" id="filter__bluetooth--yes" type="radio" name="bluetooth">
                   <label for="filter__bluetooth--yes">Есть</label>
                   <input class="filter__bluetooth" id="filter__bluetooth--no" type="radio" name="bluetooth">
                   <label for="filter__bluetooth--no">Нет</label>                              
               </fieldset>
-               <!-- <p class="filter__header"></p>  -->
-
-
-
               <input class="button filter__button" type="submit" value="Показать">
             </form>
             <div class="products__sample">
-
-
               <ul class="products__list">
                 <li class="products__item">
                   <a href="#" class="products__link">
@@ -210,8 +198,6 @@
                   </a>
                 </li>
               </ul>
-
-
               <ul class="pagination">
                 <li class="pagination__item">
                   <a href="" class="pagination__link">Назад</a>

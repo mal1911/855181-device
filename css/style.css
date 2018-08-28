@@ -1338,3 +1338,104 @@ input::-ms-clear {
 .pagination__item:last-child .pagination__link{
   margin-right: 25px;
 }
+
+.filter {
+  margin-top: 20px;
+}
+
+.fields__color,
+.fields__price,
+.fields__bluetooth {
+  width: 200px;
+  margin-left: 50px;
+  border: none;
+}
+
+.fields__price {
+  margin-top: 49px;
+}
+
+.fields__color {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+.fields__bluetooth {
+  margin-top: 20px;
+}
+
+.filter__title{
+  width: 100%;
+  margin-top: 10px;
+  /*padding-top: 9px;
+  padding-bottom: 10px;*/
+  color: black;
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0;
+  border-top: 2px solid black;
+}
+
+.fields__color .filter__title {
+  margin-bottom: -4px;
+} 
+
+.color__label {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.color__label::before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/checkbox-off.svg");
+  content: "";
+}
+
+.filter__price {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  margin-top: 21px;
+  background-image: linear-gradient(to right, #91c92f , #91c92f 106px, #dbdbdb 106px, #dbdbdb);
+}
+
+.filter__price::before,
+.filter__price::after {
+  position: absolute;
+  top: -11px;
+  width: 20px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/filter-button.svg");
+  content: "";
+}
+
+.filter__price::before {
+  left: -6px;
+}
+
+.filter__price::after {
+  left: 106px;
+}
+
+.price__label {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.price__max {
+  margin-right: 56px;
+}
