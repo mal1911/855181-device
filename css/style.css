@@ -501,7 +501,14 @@ input::-ms-clear {
 }
 
 .characteristics__item {
+  display: flex;
+  flex-direction: column-reverse;
   margin-right: 77px;
+}
+
+.characteristics dt {
+  font-size: 13px;
+  line-height: 20px;  
 }
 
 .characteristics dd {
@@ -511,11 +518,6 @@ input::-ms-clear {
   font-weight: 300;
   font-size: 36px;
   line-height: 48px; 
-}
-
-.characteristics dt {
-  font-size: 13px;
-  line-height: 20px;  
 }
 
 .popular__controls {
