@@ -16,7 +16,7 @@
   		<div class="header__top">
        	<form class="search"  action="https://echo.htmlacademy.ru" method="get"> 
          	<input class="search__text" type="text" name="search" placeholder="Поиск по сайту">
-           <input class="button search__button" type="submit" value="Найти">
+           <input class="search__button" type="submit" value="Найти">
         </form>
         <div class="header__right">
           <ul class="menu menu--user">
@@ -84,7 +84,7 @@
           <h1 class="main__header">Моноподы для селфи</h1>    
           <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Главная</a>
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
             </li> 
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">Каталог товаров</a>
@@ -101,7 +101,10 @@
             <p class="filter__header"> Фильтр:</p>
             <fieldset class="filter__price">
               <legend class="price__header">Стоимость</legend>
-              <div class="price__control" id="price__control"></div>
+              <div class="price__control" id="price__control">
+                <div class="price__left"></div>
+                <div class="price__right"></div>
+              </div>
               <label  class="price__label" for="price__control" tabindex="0"><span class="price__min">от 0</span><span class="price__max">до 5000</span></label>
             </fieldset>
             <fieldset class="filter__color">
@@ -114,7 +117,7 @@
               <label class="color__label color__label--item3" for="color__control--item3" tabindex="0">Синий</label>
               <input class="color__control visually-hidden" id="color__control--item4" type="checkbox" name="color__control--item4" checked>
               <label class="color__label color__label--item4" for="color__control--item4" tabindex="0">Красный</label>
-              <input class="color__control visually-hidden" id="color__control--item5" type="checkbox" name="color__control--item5">
+              <input class="color__control visually-hidden" id="color__control--item5" type="checkbox" name="color__control--item5" disabled>
               <label class="color__label color__label--item5" for="color__control--item5" tabindex="0">Розовый</label>
             </fieldset>
             <fieldset class="filter__bluetooth">
@@ -133,10 +136,10 @@
               </p>              
               <ul class="sort">
                 <li class="sort__item">
-                  <a href="#" class="sort__link">По цене</a>
+                  <a href="#" class="sort__link sort__link--active">По цене</a>
                 </li>
                 <li class="sort__item">
-                  <a href="#" class="params__link">По типу</a>
+                  <a href="#" class="sort__link">По типу</a>
                 </li>
                 <li class="sort__item">
                   <a href="#" class="sort__link">По популярности</a>
@@ -144,7 +147,7 @@
               </ul>
               <ul class="order">
                 <li class="order__item">
-                  <a href="#" class="order__link"><span class="visually-hidden">По возрастанию</span></a>
+                  <a href="#" class="order__link order__link--active"><span class="visually-hidden">По возрастанию</span></a>
                 </li>
                 <li class="order__item">
                   <a href="#" class="order__link"><span class="visually-hidden">По убыванию</span></a>
@@ -154,6 +157,10 @@
             <ul class="samples__list">
               <li class="samples__item">
                 <a href="#" class="samples__link">
+                  <div class="samples__inner">
+                    <input class="button samples__button" type="button" value="В корзину">
+                    <input class="button samples-add__button" type="button" value="Добавить к сравнению">
+                  </div>
                   <img class="samples__img" src="img\item-1.png" width="360" height="380" alt="item1" title="item1">
                   <div class="samples__description">
                     <p class="samples__text">Любительская селфи-палка</p>
@@ -163,6 +170,10 @@
               </li>
               <li class="samples__item">
                 <a href="#" class="samples__link">
+                  <div class="samples__inner">
+                    <input class="button samples__button" type="button" value="В корзину">
+                    <input class="button samples-add__button" type="button" value="Добавить к сравнению">
+                  </div>
                   <img class="samples__img" src="img\item-2.png" width="360" height="380" alt="item1" title="item2">
                   <div class="samples__description">
                     <p class="samples__text">Профессиональная селфи-палка</p>
@@ -172,6 +183,10 @@
               </li>
               <li class="samples__item">
                 <a href="#" class="samples__link">
+                  <div class="samples__inner">
+                    <input class="button samples__button" type="button" value="В корзину">
+                    <input class="button samples-add__button" type="button" value="Добавить к сравнению">
+                  </div>
                   <img class="samples__img" src="img\item-3.png" width="360" height="380" alt="item1" title="item3">
                   <div class="samples__description">
                     <p class="samples__text">Непотопляемая селфи-палка</p>
@@ -181,6 +196,10 @@
               </li>
               <li class="samples__item">
                 <a href="#" class="samples__link">
+                  <div class="samples__inner">
+                    <input class="button samples__button" type="button" value="В корзину">
+                    <input class="button samples-add__button" type="button" value="Добавить к сравнению">
+                  </div>
                   <img class="samples__img" src="img\item-4.png" width="360" height="380" alt="item1" title="item4">                
                   <div class="samples__description">
                     <p class="samples__text">Селфи-палка «Следуй за мной»</p>
@@ -189,25 +208,23 @@
                 </a>
               </li>
             </ul>
-            <div class="pagination">
-              <div class="pagination__item">
+            <ul class="pagination">
+              <li class="pagination__item">
                 <a href="" class="pagination__link">Назад</a>
-              </div>
-              <ul class="pagination__pages">
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">1</a>                    
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">2</a>                    
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">3</a>                    
-                </li>
-              </ul>
-              <div class="pagination__item">
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link--active">1</a>                    
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>                    
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>                    
+              </li>
+              <li class="pagination__item">
                 <a href="" class="pagination__link">Вперед</a>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
 			</section>
