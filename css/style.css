@@ -83,6 +83,7 @@ input[type="radio"].visually-hidden {
   background-image: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
   text-transform: uppercase;
   border: none;
+  transition:all .2s ease-in-out;
 }
 
 .button:hover,
@@ -91,12 +92,13 @@ input[type="radio"].visually-hidden {
 }
 
 .button:hover {
-  transition-delay: 0.2s;
+  /*transition-delay: 0.2s;*/
 }
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
   background: #f0c52e;
+
 }
 
 input::-ms-clear {
@@ -1596,6 +1598,44 @@ input::-ms-clear {
 .pagination__item .pagination__link.pagination__link--active {
   color: rgba(0, 0, 0, 1); 
 }
+/***** modal *******/
+.modal {
+  position: fixed;
+  
+  color: black;
 
+  /*background-color: #red;
+  /*background-image: url("img/pattern-light.jpg");*/
+  /*background-position: 0 0;
+  background-repeat: ;*/
+  background-color: white;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
 
+.modal__message {
+  top: 50%;
+  left: 50%;
+  
+  /*display: none;*/
 
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+}
+/*
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+*/
