@@ -15,7 +15,7 @@
   		</a>
   		<div class="header__top">
        	<form class="search"  action="https://echo.htmlacademy.ru" method="get"> 
-         	<input class="search__text" type="text" name="search" placeholder="Поиск по сайту">
+         	<input class="search__text" type="text" name="search" placeholder="Поиск по сайту" autocomplete="off">
            <input class="search__button" type="submit" value="Найти">
         </form>
         <div class="header__right">
@@ -232,9 +232,9 @@
         <section class="contacts">
           <h3 class="contacts__header">Контакты</h3>
           <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="contacts__map">
+          <div class="contacts__map" id="contacts__map">
           </div>
-          <input class="button contacts__button" type="button" name="contact-button" value="Напишите нам">
+          <button class="button contacts__button" type="button" name="contact-button" >Напишите нам</button>
         </section>
     	</section>
 		</main>
@@ -304,34 +304,35 @@
 
 		<section class="modal modal__message">
 			<h2 class="message__header visually-hidden">Написать нам</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="label__name" for="control__name">Ваше имя:</label>
-          <input class="control__name" id="control__name" type="text" name="control__name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label class="label__email" for="control__email">Ваш e-mail:</label>
-          <input class="control__email" id="control__email" type="text" name="control__email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label class="label__text" for="control__text">Текст письма:</label>
-          <textarea class="control__text" name="control__text" id="control__text" cols="30" rows="10">В свободной форме</textarea>
-        </p>
-	      <button class="button message__button" type="submit">Закрыть</button>
+      <form class="message__form" action="https://echo.htmlacademy.ru" method="post">
+      	<div class="message__top">
+	        <div class="message__name">
+	          <label class="label__name" for="control__name">Ваше имя:</label>
+	          <input class="control__name" id="control__name" type="text" required name="control__name" placeholder="Имя Фамилия" autocomplete="off">
+	        </div>
+	        <div class="message__email">	        
+	          <label class="label__email" for="control__email">Ваш e-mail:</label>
+	          <input class="control__email" id="control__email" type="email" required name="control__email" placeholder="email@example.com" autocomplete="off">
+	        </div>
+      	</div>
+	        <div class="message__text">	 
+          	<label class="label__text" for="control__text">Текст письма:</label>
+          	<textarea class="control__text" name="control__text" id="control__text" cols="50" rows="10" placeholder="В свободной форме" autocomplete="off"></textarea>
+        	</div>
+	      <button class="button message__button" type="submit">Отправить</button>
       </form>
-		  <button class="modal__close" type="button">x<span class="visually-hidden">Закрыть</span></button>
+		  <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
 		</section>
-
-<!--     <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p>
-        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    </p>
-    <button class="modal-close" type="button">Закрыть</button>
-</section>
- -->
-
-
-
+    <section class="modal modal__map" id="modal__map">
+	    <h2 class="map__header visually-hidden">Как до нас добраться</h2>
+	    <div class = "map__container" id="map__container"></div>
+	    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+		</section>
+		<div class="modal__overlay">
+		</div>
+		<script src="https://webasr.yandex.net/jsapi/v1/webspeechkit.js"></script>
+		<script src="https://webasr.yandex.net/jsapi/v1/webspeechkit-settings.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script src="js/scripts.js"></script>
   </body>
 </html>
