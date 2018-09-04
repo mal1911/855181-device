@@ -4,7 +4,7 @@
   	<meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">    
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style-min.css">    
   </head>
   <body class="goods">
   	<header class="header container">
@@ -96,19 +96,20 @@
         </div>
       </div>
 			<section class="products">
+        <h2 class="products__header visually-hidden">Каталог моноподов для селфи</h2>            
         <div class="container">
           <form class="filter"  action="https://echo.htmlacademy.ru" method="get">
             <p class="filter__header"> Фильтр:</p>
-            <fieldset class="filter__price">
-              <legend class="price__header">Стоимость</legend>
+            <div class="filter__price">
+              <p class="price__header">Стоимость</p>
               <div class="price__control" id="price__control">
                 <div class="price__left"></div>
                 <div class="price__right"></div>
               </div>
-              <label  class="price__label" for="price__control" tabindex="0"><span class="price__min">от 0</span><span class="price__max">до 5000</span></label>
-            </fieldset>
-            <fieldset class="filter__color">
-              <legend class="color__header">Цвет</legend>
+              <label  class="price__label" tabindex="0"><span class="price__min">от 0</span><span class="price__max">до 5000</span></label>
+            </div>
+            <div class="filter__color">
+              <p class="color__header">Цвет</p>
               <input class="color__control visually-hidden" id="color__control--item1" type="checkbox" name="color__control--item1" checked>
               <label class="color__label color__label--item1" for="color__control--item1" tabindex="0">Черный</label>
               <input class="color__control visually-hidden" id="color__control--item2" type="checkbox" name="color__control--item2" checked>
@@ -119,14 +120,14 @@
               <label class="color__label color__label--item4" for="color__control--item4" tabindex="0">Красный</label>
               <input class="color__control visually-hidden" id="color__control--item5" type="checkbox" name="color__control--item5" disabled>
               <label class="color__label color__label--item5" for="color__control--item5" tabindex="0">Розовый</label>
-            </fieldset>
-            <fieldset class="filter__bluetooth">
-              <legend class="bluetooth__header">Bluetooth</legend>                
+            </div>
+            <div class="filter__bluetooth">
+              <p class="bluetooth__header">Bluetooth</p>                
               <input class="bluetooth__control visually-hidden" id="bluetooth__control--yes" type="radio" name="bluetooth" checked>
               <label class="bluetooth__label" for="bluetooth__control--yes" tabindex="0">Есть</label>
               <input class="bluetooth__control visually-hidden" id="bluetooth__control--no" type="radio" name="bluetooth">
               <label class="bluetooth__label" for="bluetooth__control--no" tabindex="0">Нет</label>
-            </fieldset>
+            </div>
             <input class="button filter__button" type="submit" value="Показать">
           </form>
           <div class="samples">
