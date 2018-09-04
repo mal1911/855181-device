@@ -1465,27 +1465,28 @@ input::-ms-clear {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 200px;
-  margin-left: 50px;
+  margin-left: 61px;
   border: none;
 }
 
 .filter__price {
-  margin-top: 70px;
+  margin-top: 52px;
 }
 
 .filter__color {
-  margin-top: 22px;
+  margin-top: 15px;
 }
 
 .filter__bluetooth {
-  margin-top: 19px;
+  margin-top: 11px;
 }
 
 .price__header,
 .color__header,
 .bluetooth__header {
   width: 100%;
-  margin-bottom: 16px;
+  margin-top: 18px;
+  margin-bottom: 20px;
   padding-top: 9px;
   color: #000000;
   font-family: Gilroy, Helvetica, sans-serif;
@@ -1593,7 +1594,7 @@ input::-ms-clear {
 
 .filter__button {
   width: 200px;
-  margin-top: 20px;
+  margin-top: 29px;
   margin-left: 58px;
 }
 
