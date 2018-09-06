@@ -25,8 +25,16 @@
     isStorageSupport = false;
   }
 
+  function modalClose(){
+    if (modal__message.classList.contains("modal__show"))
+      modal__message.classList.remove("modal__show");
+    if (modal__map.classList.contains("modal__show")) 
+      modal__map.classList.remove("modal__show");
+    modal__overlay.classList.remove("modal__show-overlay");
+  };
+
   contacts__button.addEventListener("click", function (evt) {
-    modal__overlay.classList.add("modal__show");
+    modal__overlay.classList.add("modal__show-overlay");
     modal__message.classList.add("modal__show");
     if (name !== "null")
       control__name.value = name;
@@ -36,34 +44,26 @@
   });
 
   contacts__map.addEventListener("click", function (evt) {
-    modal__overlay.classList.add("modal__show");
+    modal__overlay.classList.add("modal__show-overlay");
     modal__map.classList.add("modal__show");
   });
 
   message__close.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalclose();
+    modalClose();
   });
 
   map__close.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalclose();
+    modalClose();
   });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      modalclose();
+      modalClose();
     }
   });
-
-  function modalclose(){
-    if (modal__message.classList.contains("modal__show"))
-      modal__message.classList.remove("modal__show");
-    if (modal__map.classList.contains("modal__show")) 
-      modal__map.classList.remove("modal__show");
-    modal__overlay.classList.remove("modal__show");
-  };
 
   form.addEventListener("submit", function (evt) {
     if (isStorageSupport) {
@@ -73,19 +73,18 @@
   });
 
 /*map*/
-
   ymaps.ready(init);
   function init () {
-    var myMap = new ymaps.Map('map__container', {
+    var myMap = new ymaps.Map("map__container", {
       center: [55.686980, 37.529654],
       zoom: 17
     });
 
     var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
       balloonContentBody: [
-                           '<address>Улица Стороителей, 15</address>'
+                           "<address>Улица Стороителей, 15</address>"
                           ].join('')
-      }, {preset: 'islands#redIcon',});
+      }, {preset: "islands#redIcon",});
       myMap.geoObjects.add(myPlacemark);
   };
 
