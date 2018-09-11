@@ -74,7 +74,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -573,8 +573,8 @@ input::-ms-clear {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 48.3%;
-  height: 550px;
+  width: 559px;
+  height: 492px;
 }
 
 .popular__right::before {
@@ -588,6 +588,7 @@ input::-ms-clear {
 }
 
 .popular__slogan {
+  width: 405px;
   margin-top: 96px;
   margin-bottom: 0;
   font-family: Gilroy, Helvetica, sans-serif;
@@ -595,6 +596,10 @@ input::-ms-clear {
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.7px;
+}
+
+.popular__item--item3 .popular__slogan {
+  width: 517px;
 }
 
 .popular__description {
@@ -606,10 +611,10 @@ input::-ms-clear {
 .popular__more-info {
   width: 220px;
   margin-top: 43px;
-  margin-bottom: 50px;
-}
+ }
 
 .characteristics {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,6 +631,8 @@ input::-ms-clear {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-right: 77px;
 }
 
@@ -637,7 +644,7 @@ input::-ms-clear {
 .characteristics dd {
   margin-left: 0;
   margin-bottom: 8px;
-  font-family: 'Gilroy';
+  font-family: Gilroy, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 48px; 
@@ -680,7 +687,7 @@ input::-ms-clear {
 }
 /***** category *******/
 .category {
-  margin-top: 59px;
+  margin-top: 116px;
 }
 
 .category__list {
@@ -935,6 +942,7 @@ input::-ms-clear {
           filter: inherit;
 }
 
+/*
 .brands__link--item1 {
   background-image: url("../img/brand1.png");
 }
@@ -984,6 +992,9 @@ input::-ms-clear {
     background-image: url("../img/brand4.png");
   }
 }
+
+*/
+
 /***** info ***********/
 .info {
   margin-top: 136px;
@@ -1112,11 +1123,11 @@ input::-ms-clear {
       -ms-flex-pack: start;
           justify-content: flex-start;   
 }
-
+/*
 .footer__logo svg {
   fill: #ffc600;
 }
-
+*/
 .footer__logo {
   position: absolute;
   top: 65px;
@@ -1814,7 +1825,7 @@ input::-ms-clear {
 
 .samples-add__button {
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 36px;
