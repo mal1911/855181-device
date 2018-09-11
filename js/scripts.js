@@ -1,5 +1,5 @@
   var contacts__button = document.querySelector(".contacts__button");
-  var contacts__map = document.querySelector(".contacts__map");
+  var contacts__link = document.querySelector(".contacts__link");
   
   var modal__message = document.querySelector(".modal__message");
   var message__close = modal__message.querySelector(".modal__close");
@@ -43,7 +43,8 @@
     control__name.focus();
   });
 
-  contacts__map.addEventListener("click", function (evt) {
+  contacts__link.addEventListener("click", function (evt) {
+    evt.preventDefault();
     modal__overlay.classList.add("modal__show-overlay");
     modal__map.classList.add("modal__show");
   });

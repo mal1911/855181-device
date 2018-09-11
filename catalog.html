@@ -9,7 +9,7 @@
   <body class="goods">
   	<header class="header container">
   		<a class="logo header__logo" href="index.html">
-        <img class="logo__link" src="img\logo.svg" width="163.281" height="34.938" alt="Интернет-магазин Device" title="Интернет-магазин Device">
+        <img class="logo__img" src="img\logo.svg" width="163.281" height="34.938" alt="Интернет-магазин Device" title="Интернет-магазин Device">
   		</a>
   		<div class="header__top">
        	<form class="search"  action="https://echo.htmlacademy.ru" method="get"> 
@@ -43,7 +43,7 @@
               <a class="catalog__link" href="#">Виртуальная реальность</a>
             </li>
             <li class="catalog__item">
-              <a class="catalog__link" href="#">Моноподы для селфи</a>
+              <a class="catalog__link">Моноподы для селфи</a>
             </li>
             <li class="catalog__item">
               <a class="catalog__link" href="#">Экшн-камеры</a>
@@ -88,7 +88,7 @@
               <a class="breadcrumbs__link" href="#">Каталог товаров</a>
             </li> 
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
+              <a class="breadcrumbs__link">Моноподы для селфи</a>
             </li> 
           </ul>
         </div>
@@ -104,7 +104,12 @@
                 <div class="price__left"></div>
                 <div class="price__right"></div>
               </div>
-              <label  class="price__label" tabindex="0"><span class="price__min">от 0</span><span class="price__max">до 5000</span></label>
+              <label  class="price__label" tabindex="0">
+                <span class="price__min">от</span>
+                <input class="price__value price__value--min" type="text" name="price-min-value" value="0">
+                <span class="price__max">до</span>
+                <input class="price__value price__value--max" type="text" name="price-max-value" value="5000">
+              </label>
             </div>
             <div class="filter__color">
               <p class="color__header">Цвет</p>
@@ -156,63 +161,63 @@
             <ul class="samples__list">
               <li class="samples__item">
                 <div class="samples__block">
-                  <img class="samples__img" src="img/item-1.png" width="360" height="380" alt="item1" title="item1">                
-                  <a href="#" class="samples__link">
-                    <p class="samples__text">Любительская селфи-палка</p>
+                  <img class="samples__img" src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка" title="Любительская селфи-палка">                
+                  <div class="samples__text">
+                    <a href="#" class="samples__link">Любительская селфи-палка</a>
                     <p class="samples__price">500 руб.</p>
-                  </a>
+                  </div>
                   <div class="samples__inner">
-                    <button class="button samples__button" type="button">В корзину</button>
-                    <button class="button samples-add__button" type="button">Добавить к сравнению</button>
+                    <a class="button samples__button" href="#">В корзину</a>
+                    <a class="button samples-add__button" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
               </li>
               <li class="samples__item">
                 <div class="samples__block">
-                  <img class="samples__img" src="img/item-2.png" width="360" height="380" alt="item2" title="item2">                
-                  <a href="#" class="samples__link">
-                    <p class="samples__text">Профессиональная селфи-палка</p>
+                  <img class="samples__img" src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка" title="Профессиональная селфи-палка">                
+                  <div class="samples__text">
+                    <a href="#" class="samples__link">Профессиональная селфи-палка</a>
                     <p class="samples__price">1 500 руб.</p>
-                  </a>
+                  </div>
                   <div class="samples__inner">
-                    <button class="button samples__button" type="button">В корзину</button>
-                    <button class="button samples-add__button" type="button">Добавить к сравнению</button>
+                    <a class="button samples__button" href="#">В корзину</a>
+                    <a class="button samples-add__button" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
               </li>
               <li class="samples__item">
                 <div class="samples__block">
-                  <img class="samples__img" src="img/item-3.png" width="360" height="380" alt="item3" title="item3">                
-                  <a href="#" class="samples__link">
-                    <p class="samples__text">Непотопляемая селфи-палка</p>
+                  <img class="samples__img" src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка" title="Непотопляемая селфи-палка">                
+                  <div class="samples__text">
+                    <a href="#" class="samples__link">Непотопляемая селфи-палка</a>
                     <p class="samples__price">2 500 руб.</p>
-                  </a>
+                  </div>
                   <div class="samples__inner">
-                    <button class="button samples__button" type="button">В корзину</button>
-                    <button class="button samples-add__button" type="button">Добавить к сравнению</button>
+                    <a class="button samples__button" href="#">В корзину</a>
+                    <a class="button samples-add__button" href="#">Добавить к сравнению</a>               
                   </div>
                 </div>
               </li>
               <li class="samples__item samples__item--new">
                 <div class="samples__block">
-                  <img class="samples__img" src="img/item-4.png" width="360" height="380" alt="item4" title="item4">                
-                  <a href="#" class="samples__link">
-                    <p class="samples__text">Селфи-палка «Следуй за мной»</p>
+                  <img class="samples__img" src="img/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»" title="Селфи-палка «Следуй за мной»">                
+                  <div class="samples__text">
+                    <a href="#" class="samples__link">Селфи-палка «Следуй за мной»</a>
                     <p class="samples__price">4 900 руб.</p>
-                  </a>
+                  </div>
                   <div class="samples__inner">
-                    <button class="button samples__button" type="button">В корзину</button>
-                    <button class="button samples-add__button" type="button">Добавить к сравнению</button>
+                    <a class="button samples__button" href="#">В корзину</a>
+                    <a class="button samples-add__button" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
               </li>
             </ul>
             <ul class="pagination">
               <li class="pagination__item">
-                <a href="" class="pagination__link">Назад</a>
+                <a class="pagination__link">Назад</a>
               </li>
               <li class="pagination__item">
-                <a href="#" class="pagination__link pagination__link--active">1</a>                    
+                <a class="pagination__link pagination__link--active">1</a>                    
               </li>
               <li class="pagination__item">
                 <a href="#" class="pagination__link">2</a>                    
@@ -221,7 +226,7 @@
                 <a href="#" class="pagination__link">3</a>                    
               </li>
               <li class="pagination__item">
-                <a href="" class="pagination__link">Вперед</a>
+                <a href="#" class="pagination__link">Вперед</a>
               </li>
             </ul>
           </div>
@@ -231,7 +236,7 @@
 		<footer class="footer">
     	<div class="container">
       	<a class="logo footer__logo" href="index.html">
-        <img class="logo__link" src="img\logo-footer.svg" width="163.281" height="34.938" alt="Интернет-магазин Device" title="Интернет-магазин Device">
+        <img class="logo__img" src="img\logo-footer.svg" width="163.281" height="34.938" alt="Интернет-магазин Device" title="Интернет-магазин Device">
       	</a>
 	      <div class="footer__top">
 	      	<div class="footer__right">
@@ -284,12 +289,10 @@
 	            <a class="menu__link menu__link--twitter" href="#"></a>
 	          </li>               
 	        </ul> 
-	      	<a class="html-academy" href="https://htmlacademy.ru" target="_blank">
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" fill="#ffc600">
-						  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-						</svg>
-	      	</a>
-	      </div>
+          <a class="html-academy" href="https://up.htmlacademy.ru/htmlcss/22" target="_blank">
+            <img class="html-academy__link" src="img\logo-html.svg" width="26.943" height="34.09" alt="HTML Academy" title="HTML Academy">
+          </a>
+        </div>
 	    </div>
 		</footer>
   </body>
