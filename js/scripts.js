@@ -34,6 +34,7 @@
   };
 
   contacts__button.addEventListener("click", function (evt) {
+    evt.preventDefault();
     modal__overlay.classList.add("modal__show-overlay");
     modal__message.classList.add("modal__show");
     if (name !== "null")

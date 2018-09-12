@@ -18,10 +18,10 @@
         </form>
         <div class="header__right">
           <ul class="menu menu--user">
-          	<li class="menu__item">
-          		<a class="menu__link menu__link--user-name" href="#">Валентин Петухов Rjycnfynbyjdbx</a>
+          	<li class="menu__item menu__item--user-name">
+          		<a class="menu__link menu__link--user-name" href="#">Валентин Петухов</a>
           	</li>
-            <li class="menu__item">
+            <li class="menu__item menu__item--user-out">
             	<a class="menu__link menu__link--user-out" href="#">Выйти</a>
             </li>
           </ul>
@@ -114,22 +114,22 @@
             <div class="filter__color">
               <p class="color__header">Цвет</p>
               <input class="color__control visually-hidden" id="color__control--item1" type="checkbox" name="color__control--item1" value="item1" checked>
-              <label class="color__label color__label--item1" for="color__control--item1" tabindex="0">Черный</label>
+              <label class="color__label color__label--item1" for="color__control--item1" >Черный</label>
               <input class="color__control visually-hidden" id="color__control--item2" type="checkbox" name="color__control--item2" value="item2" checked>
-              <label class="color__label color__label--item2" for="color__control--item2" tabindex="0">Белый</label>
+              <label class="color__label color__label--item2" for="color__control--item2" >Белый</label>
               <input class="color__control visually-hidden" id="color__control--item3" type="checkbox" name="color__control--item3" value="item3">
-              <label class="color__label color__label--item3" for="color__control--item3" tabindex="0">Синий</label>
+              <label class="color__label color__label--item3" for="color__control--item3" >Синий</label>
               <input class="color__control visually-hidden" id="color__control--item4" type="checkbox" name="color__control--item4" value="item4" checked>
-              <label class="color__label color__label--item4" for="color__control--item4" tabindex="0">Красный</label>
+              <label class="color__label color__label--item4" for="color__control--item4" >Красный</label>
               <input class="color__control visually-hidden" id="color__control--item5" type="checkbox" name="color__control--item5" value="item5" disabled>
-              <label class="color__label color__label--item5" for="color__control--item5" tabindex="0">Розовый</label>
+              <label class="color__label color__label--item5" for="color__control--item5" >Розовый</label>
             </div>
             <div class="filter__bluetooth">
               <p class="bluetooth__header">Bluetooth</p>                
               <input class="bluetooth__control visually-hidden" id="bluetooth__control--yes" type="radio" name="bluetooth" value="on" checked>
-              <label class="bluetooth__label" for="bluetooth__control--yes" tabindex="0">Есть</label>
+              <label class="bluetooth__label" for="bluetooth__control--yes">Есть</label>
               <input class="bluetooth__control visually-hidden" id="bluetooth__control--no" type="radio" name="bluetooth" value="off">
-              <label class="bluetooth__label" for="bluetooth__control--no" tabindex="0">Нет</label>
+              <label class="bluetooth__label" for="bluetooth__control--no">Нет</label>
             </div>
             <input class="button filter__button" type="submit" value="Показать">
           </form>
@@ -137,26 +137,28 @@
             <div class="samples__top">
               <p class="samples__header">
                 Сортировка:
-              </p>              
-              <ul class="sort">
-                <li class="sort__item">
-                  <a href="#" class="sort__link sort__link--active">По цене</a>
-                </li>
-                <li class="sort__item">
-                  <a href="#" class="sort__link">По типу</a>
-                </li>
-                <li class="sort__item">
-                  <a href="#" class="sort__link">По популярности</a>
-                </li>
-              </ul>
-              <ul class="order">
-                <li class="order__item">
-                  <a href="#" class="order__link order__link--active"><span class="visually-hidden">По возрастанию</span></a>
-                </li>
-                <li class="order__item">
-                  <a href="#" class="order__link"><span class="visually-hidden">По убыванию</span></a>
-                </li>                                                                
-              </ul>
+              </p>
+              <div class="samples__sort-order">
+                <ul class="sort">
+                  <li class="sort__item">
+                    <a href="#" class="sort__link sort__link--active">По цене</a>
+                  </li>
+                  <li class="sort__item">
+                    <a href="#" class="sort__link">По типу</a>
+                  </li>
+                  <li class="sort__item">
+                    <a href="#" class="sort__link">По популярности</a>
+                  </li>
+                </ul>
+                <ul class="order">
+                  <li class="order__item">
+                    <a href="#" class="order__link order__link--active"><span class="visually-hidden">По возрастанию</span></a>
+                  </li>
+                  <li class="order__item">
+                    <a href="#" class="order__link"><span class="visually-hidden">По убыванию</span></a>
+                  </li>                                                                
+                </ul>
+              </div>              
             </div>
             <ul class="samples__list">
               <li class="samples__item">
@@ -277,16 +279,13 @@
 	      <div class="footer__bottom">
 	        <ul class="menu menu--social">
 	          <li class="menu__item">
-	          	<span class="visually-hidden">fb</span>
-	            <a class="menu__link menu__link--fb" href="#"></a>
+	            <a class="menu__link menu__link--fb" href="#"><span class="visually-hidden">fb</span></a>
 	          </li>
 	          <li class="menu__item">
-	            <span class="visually-hidden">vk</span>
-	            <a class="menu__link menu__link--vk" href="#"></a>
+	            <a class="menu__link menu__link--vk" href="#"><span class="visually-hidden">vk</span></a>
 	          </li>
 	          <li class="menu__item">
-	          	<span class="visually-hidden">twitter</span>
-	            <a class="menu__link menu__link--twitter" href="#"></a>
+	            <a class="menu__link menu__link--twitter" href="#"><span class="visually-hidden">twitter</span></a>
 	          </li>               
 	        </ul> 
           <a class="html-academy" href="https://up.htmlacademy.ru/htmlcss/22" target="_blank">
