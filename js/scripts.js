@@ -3,6 +3,8 @@
   
   var modal__message = document.querySelector(".modal__message");
   var message__close = modal__message.querySelector(".modal__close");
+  var message__button = modal__message.querySelector(".message__button");
+  
 
   var modal__map = document.querySelector(".modal__map");
   var map__close = modal__map.querySelector(".modal__close");
@@ -26,6 +28,8 @@
   }
 
   function modalClose(){
+    if (modal__message.classList.contains("modal__error"))
+      modal__message.classList.remove("modal__error");
     if (modal__message.classList.contains("modal__show"))
       modal__message.classList.remove("modal__show");
     if (modal__map.classList.contains("modal__show")) 
@@ -72,6 +76,12 @@
         localStorage.setItem("name", control__name.value);
         localStorage.setItem("email", control__email.value);        
     }
+  });
+
+  message__button.addEventListener("click", function (evt) {
+    var elms = form.querySelectorAll("input:invalid")
+    if(elms.length > 0)        
+      modal__message.classList.add("modal__error");  
   });
 
 /*map*/

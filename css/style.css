@@ -48,9 +48,22 @@
 
 
 @keyframes shake {
-0%, 100% { transform: translateX(0); }
-10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-20%, 40%, 60%, 80% { transform: translateX(10px); }
+
+0%, 100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+10%, 30%, 50%, 70%, 90% {
+   top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+20%, 40%, 60%, 80% {
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+ }
 }
 
 body {
@@ -678,7 +691,7 @@ input::-ms-clear {
 }
 /***** category *******/
 .category {
-  margin-top: 116px;
+  margin-top: 106px;
 }
 
 .category__list {
@@ -777,7 +790,7 @@ input::-ms-clear {
 /***** service ***************/
 .service {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 72px;
   background-image: -webkit-linear-gradient(top, #ffffff 100px, #e5e5e5 100px);
   background-image: -o-linear-gradient(top, #ffffff 100px, #e5e5e5 100px);
   background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
@@ -904,7 +917,7 @@ input::-ms-clear {
 }
 /***** brands *******/
 .brands {
-  margin-top: 108px;
+  margin-top: 84px;
 }
 
 .brands__list {
@@ -960,8 +973,12 @@ input::-ms-clear {
 .brands__link--item4 {
   background-image: url("../img/brand4.png");
 }
-
+*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  .brands__img {
+    display: none;
+  }
+ 
   .brands__link--item1 {
     background-image: url("../img/brand-ie-1.png");
   }
@@ -993,13 +1010,13 @@ input::-ms-clear {
   .brands__link--item4:hover {
     background-image: url("../img/brand4.png");
   }
+
 }
 
-*/
 
 /***** info ***********/
 .info {
-  margin-top: 136px;
+  margin-top: 147px;
   margin-bottom: 83px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1038,6 +1055,14 @@ input::-ms-clear {
   height: 7px;
   background-color: #000000;
   content: "";
+}
+
+.contacts__link{
+  cursor: pointer;
+}
+
+.contacts__img{
+  margin-top: 10px;
 }
 
 .about__text,
@@ -1091,9 +1116,9 @@ input::-ms-clear {
 
 .contacts__button{
   width: 259px;
-  margin-top: 69px;
+  margin-top: 60px;
 }
-
+/*
 .contacts__map{
   /*width: 100%;
   height: 221px;
@@ -1102,11 +1127,11 @@ input::-ms-clear {
   background-repeat: no-repeat;
   background-position: 0 0;*/
 
-}
+/*}
 
 .contacts__map:hover {
-  cursor: pointer;
-}
+  
+}*/
 /***** footer ***************/
 .footer {
   position: relative;
@@ -1245,7 +1270,7 @@ input::-ms-clear {
  align-items: center;
   width: 100%;
   margin-top: 45px;
-  margin-bottom: 52px;
+  margin-bottom: 65px;
 }
 
 .footer__bottom::before {
@@ -1600,7 +1625,7 @@ input::-ms-clear {
   margin-top: 5px;
   margin-bottom: 7px;
 }
-
+/*
 .price__min {
   margin-right: 0;
   font-family: Gilroy, Helvetica, sans-serif;
@@ -1609,7 +1634,8 @@ input::-ms-clear {
   line-height: 24px;
   opacity: 0.2;
 }
-
+*/
+.price__min,
 .price__max {
   margin-right: 0;
   font-family: Gilroy, Helvetica, sans-serif;
@@ -1620,11 +1646,10 @@ input::-ms-clear {
 }
 
 .price__value {
-
   font-family: Gilroy, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 13px;
   opacity: 0.2;
   margin-top: 7px;
   border: none;
@@ -1646,7 +1671,7 @@ input::-ms-clear {
 .samples {
   display: flex;
   flex-direction: column;
- /*width: 100%;*/
+ width: 100%;
  flex-grow: 1;
 
  /*align-items: stretch;*/
@@ -2008,7 +2033,7 @@ input::-ms-clear {
   height: 100%;
   z-index: 3;
   display: none;
-  background-color: rgba(0, 0, 0, 0.5);*/
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__show-overlay {
@@ -2021,6 +2046,7 @@ input::-ms-clear {
   animation-name: bounce;
   animation-duration: 0.5s;
 }
+
 
 .modal__error {
   animation-name: shake;
@@ -2129,6 +2155,7 @@ input::-ms-clear {
   letter-spacing: 0.5px;
   background-color: #f2f2f2;
   border: none;
+  box-sizing: border-box;
 
 }
 
@@ -2170,9 +2197,6 @@ input::-ms-clear {
 }
 
 .modal__map {
-
-  left: calc((100%)/2-480px);
-  top: calc((100%)/2-270px);
   width: 960px;
   height: 540px;
   background-image: url("../img/map-big.jpg");
